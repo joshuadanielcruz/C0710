@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- Author: Joshua Cruz, 000895793 -->
+		<title>Book Club</title>
+		<style>
+			h1{
+				background-color: lightblue;
+				text-align: center;
+				}
+			
+			h2 {
+				background-color: lightgreen;
+				}
+				
+			nav span {
+				word-spacing: 1.5em;
+				margin-left: 1.5em;
+				}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="top">Josh's Book Club Reading List</h1>
+			
+			<p> All books are available on Amazon. The images and text descriptions were obtained from the Amazon website.
+			</p>
+			
+			<nav>
+				Book Title: <span><a href="#ASection">A</a> B C <a href="#DSection">D</a> E F G H I J K L M N O P Q R S T U V W X Y Z </span>
+			</nav>
+		</header>
+		
+		<section id="ASection">
+			<h2>A Man Called Ove</h2>
+			Book stuff goes here.
+			
+			<h2> Atomic Habits</h2>
+			hello fjgasdf fdas sf.
+		</section>
+		
+		<section id="DSection">
+			<h2>DPR we gang gang</h2>
+			Book stuff goes here.
+			
+			<h2> Didgeridoo</h2>
+			hello fjgasdf fdas sf.
+		</section>
+		
+	</body>
+</html>
+	
