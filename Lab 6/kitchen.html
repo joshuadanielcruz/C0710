@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8" />
+		<!-- Author: Joshua Cruz, 000895793 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Kitchen</title>
+		<link rel="stylesheet" type="text/css" href="other.css">
+		<link rel="stylesheet" type="text/css" href="mobile.css">
+	</head>
+	<body>
+		<header>
+			<h1>Sandy and Leslie's Apartment</h1>
+		</header>
+		<section id="floor">
+			<a href="apartment.html"><img src="images/apartmentfloorplan.jpg" id="outline" alt="outline" title="outline" usemap="#floor_plan" href="apartment.html"></a>
+			<map name="floor_plan">
+				<area shape="rect" coords="181,264,46,112" href="bedroom.html">
+				<area shape="poly" coords="389,108,393,236,496,243,501,308,571,307,546,113" href="bedroom.html">
+				<area shape="circle" coords="342,340,45" href="diningroom.html">
+				<area shape="rect" coords="193,290,286,381" href="kitchen.html">
+				<area shape="rect" coords="199,112,341,276" href="livingroom.html">
+			</map>
+			<nav>
+				<ul>
+					<li><a href="apartment.html">Apartment</a></li>
+					<li><a href="bedroom.html">Bedroom 1</a></li>
+					<li><a href="bedroom.html">Bedroom 2</a></li>
+					<li><a href="diningroom.html">Dining Room</a></li>
+					<li><a href="kitchen.html">Kitchen</a></li>
+					<li><a href="livingroom.html">Living Room</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section id="content">
+			<div id="item">
+				<h2>Kitchen Detail</h2>
+				<img src="images/kitchen_lg.jpg" alt="kitchen" title="kitchen" id="picture">
+			</div>
+			<div id="service">
+				<h2>Apartment services:</h2>
+				<table id="hours">
+					<thead>
+						<tr>
+							<th>Service</th>
+							<th>Day/Hours</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Gym</td>
+							<td rowspan="2">Monday-Friday 6am - 10pm<br>Saturday 8am - 8pm<br>Sunday 8am - 5pm</td>
+						</tr>
+						<tr>
+							<td>Pool</td>
+						</tr>
+						<tr id="laundry">
+							<td>Laundry</td>
+							<td>24/7</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2">Please do not allow people you do not know to use these facilities.</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</section>
+		<footer>
+			<p>For more information contact: <a href="mailto:SandyAndLeslie@example.com">SandyAndLeslie@example.com</a> or <a href="tel:905-555-1234">(905) 555-1234</a></p>
+			<p>&#169 Sandy and Leslie 2022</p>
+		</footer>
+	</body>
+</html>

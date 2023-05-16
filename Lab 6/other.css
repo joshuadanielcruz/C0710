@@ -1,0 +1,97 @@
+/* Author: Joshua Cruz, 000895793 */
+
+body {
+	margin: 0;
+	padding: 10px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+#outline {
+		display: block;
+		margin:	auto;
+}
+
+header {
+	text-align: center;
+	color: #4369AB;
+	font-size: 80%;
+}
+
+nav {
+	text-align: center;
+}
+
+h1 {
+		color: black;
+}
+
+h2 {
+	background-color: darkgreen;
+	color: white;
+	padding: 5px;
+	text-align: center;
+}
+
+#picture {
+	display: block;
+	margin:	auto;
+	width: 75%;
+}
+
+#hours {
+	text-align: left;
+	font-size: 75%;
+	width: 40%;
+	border-collapse: collapse;
+}
+
+#hours th, #hours td {
+    border: 1px solid #000000;
+}
+
+#hours thead {
+	background-color: #D3D3D3;
+}
+
+#hours thead tr th {
+	padding: 5px;
+}
+
+#hours tbody tr td {
+	padding: 12px;
+}
+
+#hours tbody #laundry td {
+	padding: 8px 8px 8px 15px;
+}
+
+#hours tfoot {
+	background-color: lightgreen;
+}
+
+#hours tfoot tr td {
+	padding: 5px;
+}
+
+footer {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 80%;
+}	
+
+@media all and (min-width: 601px) {
+	#floor p {
+		text-align: center;
+		font-size: 75%;
+	}
+
+	nav ul {
+		padding: 0;
+	}
+
+	nav ul li {
+		display: inline;
+		padding: 5px;
+		font-size: 85%;
+	}
+}

@@ -1,0 +1,21 @@
+/* Author: Joshua Cruz, 000895793 */
+
+@media print {	
+
+	header, footer, nav { 
+		display: none !important; 
+	} 
+	
+	* { 
+		font-family: "Times New Roman", Times, serif !important;
+	}
+	
+	body main table {
+		border: 0px !important;
+		padding: none !important;
+	}
+	
+	#review {
+		display: block !important;
+	}
+}

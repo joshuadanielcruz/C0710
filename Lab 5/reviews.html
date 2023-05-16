@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8" />
+		<!-- Author: Joshua Cruz, 000895793 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="adventurestyles.css" />
+		<link rel="stylesheet" media="screen" href="mobile.css" />
+		<link rel="stylesheet" media="print" href="printstyles.css" />
+		<title>Outdoor Adventure Reviews</title>
+		<style>
+			* { 
+				margin: 0; 
+				padding: 0;
+				box-sizing: border-box;
+				font-family: Tahoma;
+			}
+			
+			nav{
+				padding: 10px;
+			}
+			
+			nav ul{
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-evenly;
+			}
+			
+			nav li{
+				flex: 0 0 auto;
+				list-style-type: none;
+				text-align:center;
+			}
+			
+			nav a {
+				background-color: MediumSlateBlue;
+				border-top: 2px solid black;
+				border-right: 2px solid black;
+				border-left: 2px solid black;
+				border-radius: 15px 15px 0px 0px;
+				color: white;
+				display: block;
+				max-width: 180px;
+				padding: 30px 50px;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			
+			#review {
+				background-color: rgb(102,51,153);
+				color: white;
+				padding: 5px;
+				border: 2px solid black;
+				display: flex;
+				flex-direction: column;
+				margin: 5px 10%;
+			}
+			form fieldset {
+				padding: 5px;
+				margin: 20px;
+			}
+			
+			button {
+				margin: 5px 20px;
+				padding: 5px;
+				font-weight: bold;
+				background-color: orchid;
+				border: 1px solid gray;
+				text-transform: uppercase;
+			}
+			
+			#aboutyou input[type="text"]{
+				background-color: orchid;
+			}
+			
+			#aboutyou input[type="tel"]{
+				background-color: orchid;
+			}
+			
+			#aboutyou input[type="email"]{
+				background-color: orchid;
+			}
+			
+			.textcontrols {
+				display: inline-block;
+				width: 150px;
+				text-align: right;
+				padding: 0px 10px;
+			}
+			
+			.formelements img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+				padding: 10px;
+				width:100%;
+				max-width:600px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Outdoor Adventure Seminars</br>2022/2023</h1>
+		
+			<nav>
+				<ul>
+				  <li><a href="#">About Us</a></li>
+				  <li><a href="#">Travel</a></li>
+				  <li><a href="#">Photos</a></li>
+				  <li><a href="#">Shop</a></li>
+				  <li><a href="reviews.html">Reviews</a></li>
+				  <li><a href="seminars.html">Seminars</a></li>
+				  <li><a href="#">Events</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<form id="review" action="http://csunix.mohawkcollege.ca/tooltime/showit.pl" method="post">
+				<fieldset id="aboutyou">
+					<legend>About You (optional)</legend>
+					<input type="hidden" name="formname" value="Joshua Cruz Trip Review">
+					
+					<div class="formRow">
+						<label for="season">I usually preder to trips this time of year (select all that apply)</label></br>
+						<select name="pref" id="info" size="4" multiple="multiple">
+							<option value="winter">Winter</option>
+							<option value="spring">Spring</option>
+							<option value="summer">Summer</option>
+							<option value="fall">Fall</option>
+						</select>
+					</div>
+					
+					<div class="formRow">
+						<label for="firstname" class="textcontrols">First Name</label>
+						<input name="firstname" id="firstname" type="text" maxlength="20">
+					</div>
+					
+					<div class="formRow">
+						<label for="lastname" class="textcontrols">Last Name</label>
+						<input name="lastName" id="lastname" type="text" maxlength="20">
+					</div>
+					
+					<div class="formRow">
+						<label for="phone" class="textcontrols">Phone Number</label>
+						<input name="phone" id="phone" type="tel" maxlength="12" size="12">
+					</div>
+					
+					<div class="formRow">
+						<label for="email" class="textcontrols">Email Address</label>
+						<input name="email" id="email" type="email" placeholder="name@example.com" maxlength="40" size="40">
+					</div>
+				</fieldset>
+				
+				<fieldset id="tripreviews">
+					<legend>Trip Reviews</legend>
+					
+					<div class="formRow">
+						<select name="location" id="location">
+							<option value="alberta">Alberta Rural</option>
+							<option value="bc" selected="selected">B.C. Coast</option>
+							<option value="lake superior">Ontario Lake Superior</option>
+							<option value="pei">PEI</option>
+							<option value="ns cabot">Nova Scotia Cabot Trail</option>
+						</select>
+					</div>
+					
+					<div class="formRow">
+						<select name="duration" id="duration">
+							<option value="5d" selected="selected">5 Days</option>
+							<option value="7d">7 Days</option>
+							<option value="10d">10 Days</option>
+							<option value="14d">14 Days</option>
+						</select>
+					</div>
+					
+					<div class="formRow">
+						<label for="rating"> Your rating: </label></br>
+							<input id="fourstar" type="radio" name="rating" value="4" checked="checked"/> 
+							<img src="images/wheel_sm.jpg" />
+							<img src="images/wheel_sm.jpg" />
+							<img src="images/wheel_sm.jpg" />
+							<img src="images/wheel_sm.jpg" /></br>
+						
+							<input id="threestar" type="radio" name="rating" value="3"/> 
+							<img src="images/wheel_sm.jpg" />
+							<img src="images/wheel_sm.jpg" />
+							<img src="images/wheel_sm.jpg" /></br>
+						
+							<input id="twostar" type="radio" name="rating" value="2"/> 
+							<img src="images/wheel_sm.jpg" />
+							<img src="images/wheel_sm.jpg" /></br>
+
+							<input id="onestar" type="radio" name="rating" value="1"/> 
+							<img src="images/wheel_sm.jpg" /></br>
+					</div>
+					
+					<div class="formRow">
+						<label for="comments"> Comments </label></br>
+							<textarea id="comments" name="comments" cols="65" rows="7"></textarea>
+					</div>
+				</fieldset>
+				
+				<fieldset id="interests">
+					<legend>I would be interested in these trips: (check all that apply)</legend>
+						<input type="checkbox" id="trip1" name="trip1" value="coast">
+						<label for="trip1">Sea or Lake Coast</label></br>
+						<input type="checkbox" id="trip2" name="trip2" value="rural">
+						<label for="trip2">Rural</label></br>
+						<input type="checkbox" id="trip3" name="trip3" value="mountains" selected="selected">
+						<label for="trip3">Mountains</label></br>
+						<input type="checkbox" id="trip4" name="trip4" value="other">
+						<label for="trip4">Other (please specify)</label>
+						<input type="text" id="other" name="other"></br>
+				</fieldset>
+				
+				<div id="buttons">
+					<button type="submit">Send Review</button>
+					<button type="reset">Cancel</button>
+				</div>
+			</form>
+			
+			<div class="formelements">	
+				<img src="images/Capture.jpg" alt="" />
+			</div>
+			
+		</main>
+		<footer>
+			<img src="images/outdooradventurehorizontal.png" alt="Outdoor Adventure Logo" title="Outdoor Adventure Logo"/>
+		</footer>
+	</body>
+</html>

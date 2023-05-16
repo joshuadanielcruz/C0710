@@ -1,0 +1,121 @@
+/* Author: Joshua Cruz, 000895793 */
+
+@media all and (max-width: 600px) {
+	body {
+		margin: 0;
+		padding: 10px;
+		font-family: Arial, Helvetica, Verdana, sans-serif;
+	}
+
+	header {
+		text-align: center;
+		color: #4369AB;
+		font-size: 80%;
+	}
+
+	#floor p {
+		display: none;
+	}
+
+	#outline {
+		display: none;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	nav ul li {
+		padding: 5px;
+	}
+	
+	h1 {
+		color: black;
+	}
+	h2 {
+		background-color: darkgreen;
+		color: white;
+		padding: 5px;
+	}
+
+	#find {
+		border: 0;
+		font-size: 85%;
+	}
+
+	.formbutton {
+		margin-left: 10px;
+	}
+
+	#hours {
+		text-align: left;
+		font-size: 75%;
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	#hours th, #hours td {
+        border: 1px solid #000000;
+    }
+
+	#hours thead {
+		background-color: #D3D3D3;
+	}
+
+	#hours thead tr th {
+		padding: 5px;
+	}
+
+	#hours tbody tr td {
+		padding: 12px;
+	}
+
+	#hours tbody #laundry td {
+		padding: 8px 8px 8px 15px;
+	}
+
+	#map {
+		display: block;
+		margin:	auto;
+	}
+	
+	#hours tfoot {
+		background-color: lightgreen;
+	}
+
+	#hours tfoot tr td {
+		padding: 8px 8px 8px 15px;
+	}
+
+	#location {
+		grid-column: 3;
+		grid-row: 1/span 2;
+	}
+
+	#gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#gallery .picture {
+		margin: 8px;
+	}
+
+	#gallery .picture h3 {
+		color: #FFFFFF;
+		padding: 5px;
+		background-color: #808080;
+	}
+
+	footer {
+		margin-top: 10px;
+		text-align: center;
+		font-size: 13px;
+	}
+}

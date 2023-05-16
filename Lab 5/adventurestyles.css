@@ -1,0 +1,16 @@
+/* Author: Joshua Cruz, 000895793 */
+
+h1 {
+	text-align:center;
+	background-color: #E9EFFF;
+	padding: 5px;
+	margin: 5px;
+}
+
+footer {
+	border-top: 2px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
